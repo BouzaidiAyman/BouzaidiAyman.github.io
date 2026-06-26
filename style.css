@@ -1,3 +1,89 @@
-h1{
-    color: black;
+body {
+    background-color: #f4f6f9; /* Soft background to make the dark card pop */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+    margin: 0;
+    padding: 40px;
+}
+
+/* MAIN CARD CONTAINER */
+.card-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 50px;
+    background-color: #0b1330;   /* Your premium dark blue */
+    border-radius: 80px;
+    gap: 10px;                   /* Solid breathing room between columns */
+    box-shadow: 0 10px 25px rgba(4, 4, 4, 0.15); /* Drop shadow for depth */
+    max-width: 1000px;            /* Keeps the card from stretching too wide */
+      margin: 0 auto;            /* Centers the container horizontally */
+}
+
+/* THE TITLE (Corrected Spelling) */
+h1 {
+    color: #d9bf3f;              /* Your signature gold */
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+/* BRAND LOGO */
+img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;         /* Slightly rounded image edges to match card */
+    border: 2px solid #d9bf3f;   /* Gold accent border instead of grey */
+}
+
+/* TEXT AREA */
+.card-info p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;            /* Gives lines comfortable breathing room */
+    margin: 0;
+}
+
+/* RIGHT HAND SIDE ACTION ZONE */
+.card-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    min-width: 140px;            /* Ensures action stack keeps its structure */
+}
+
+/* THE PRICE TAG BUTTON */
+.card-action button {
+    width: 100%;
+    background-color: #ffffff;
+    color: #0b1330;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.card-action button:hover {
+    background-color: #d9bf3f;   /* Swaps to gold on hover */
+    transform: translateY(-2px);  /* Gentle lift animation */
+}
+
+/* GITHUB ACTION LINK */
+.card-action a {
+    color: #d9bf3f;              /* Links look better matching your gold accent */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.card-action a:hover {
+    color: #ffffff;              /* Turns crisp white on hover */
+    text-decoration: underline;
 }
