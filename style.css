@@ -1,53 +1,74 @@
-/* Defining your brand colors at the top */
+/* ==========================================
+   1. VARIABLES & SYSTEM SETUP
+   ========================================== */
 :root {
-    --ink-soft: #6b7280;
-    --ink: #111827;
-    --gold: #d9bf3f;
-    --dark-blue: #0b1330;
+    --ink-soft: #94a3b8;   /* Light slate grey for smooth readability */
+    --ink: #ffffff;        /* Crisp white for hover states */
+    --gold: #d9bf3f;       /* Accent Gold */
+    --dark-blue: #0b1330;  /* Main Card Color */
 }
 
 body {
-    background-color: #ffffff;
+    /* The premium deep midnight mix */
+    background: linear-gradient(-45deg, #050a1e, #0f172a, #030712, #0b1330);
+    background-size: 400% 400%;
+    /* Fixed timeline name to prevent keyword collision */
+    animation: luxuryWave 15s ease infinite;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px 40px;
+    min-height: 100vh;
 }
 
-/* NAVBAR HEADER */
+@keyframes luxuryWave { 
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ==========================================
+   2. THE NAVIGATION BAR (Fixed Contrast)
+   ========================================== */
 .header {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 15px 0;
-    background-color: #ffffff;
+    padding: 20px;
+    /* FIX: Removed the solid white block. Using a modern blur effect instead */
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
     max-width: 1100px;
-    margin: 0 auto 60px auto; /* Added 60px bottom margin to push the card down */
+    margin: 0 auto 60px auto;
 }
 
-/* FIX 1: Specific Navbar Logo Styling */
 .nav-logo {
-    width: 50px;             /* Made it small and elegant */
-    height: 50px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
-    border-radius: 50%;      /* Circular logo in the nav bar */
-    border: 1px solid #eee;  /* Subtle border instead of bright gold */
+    border-radius: 50%;
+    border: 1px solid rgba(219, 191, 63, 0.3); /* Subtle gold rim */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 35px;
     margin: 0;
     padding: 0;
 }
 
 .nav-links a {
-    color: var(--ink-soft);  /* Now this variable works! */
+    color: var(--ink-soft);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
     position: relative;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -61,7 +82,7 @@ body {
     bottom: -3px;
     width: 0;
     height: 1.5px;
-    background: currentColor;
+    background: var(--gold); /* Swapped line color to gold to match theme */
     border-radius: 2px;
     transition: width 0.4s cubic-bezier(0.7, 0, 0.2, 1);
 }
@@ -71,8 +92,8 @@ body {
 }
 
 .header button {
-    background: black;
-    color: #ffffff;
+    background: #ffffff;
+    color: #050a1e;
     border: none;
     padding: 10px 24px;
     border-radius: 999px;
@@ -80,88 +101,94 @@ body {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .header button:hover {
     transform: translateY(-2px);
+    background-color: var(--gold);
 }
 
-/* MAIN CARD CONTAINER */
+/* ==========================================
+   3. CONTAINER MAIN COMPONENT
+   ========================================== */
 .card-container {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
     padding: 40px 50px;
     background-color: var(--dark-blue);
-    border-radius: 40px; /* Reduced slightly from 80px for a cleaner modern look */
-    gap: 30px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
+    border-radius: 24px; /* Cleaned up border curve */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Soft border rim */
+    gap: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
     margin: 0 auto;
 }
 
-/* FIX 2: Specific Card Image Styling */
 .card-img {
     width: 140px;
     height: 140px;
     object-fit: cover;
     border-radius: 15px;
     border: 2px solid var(--gold);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
 }
 
-/* TEXT AREA */
+.card-img:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
+}
+
 .card-info p {
-    color: #ffffff;
+    color: #f1f5f9;
     font-size: 1.15rem;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
 }
 
-/* RIGHT HAND SIDE ACTION ZONE */
+/* ==========================================
+   4. ACTION COLUMNS
+   ========================================== */
 .card-action {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    min-width: 150px;
-}
-.card-img {
-    /* ... keep your existing styles here ... */
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-/* When the user hovers over the project image */
-.card-img:hover {
-    transform: scale(1.06); /* Magnifies the image to 106% of its original size */
-    border-color: #ffffff;  /* Swaps the gold border to white dynamically */
+    min-width: 160px;
 }
 
-/* THE PRICE TAG BUTTON */
 .card-action button {
     width: 100%;
     background-color: #ffffff;
     color: var(--dark-blue);
     border: none;
-    padding: 12px 20px;
-    font-weight: bold;
+    padding: 14px 20px;
+    font-weight: 700;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-action button:hover {
     background-color: var(--gold);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(217, 191, 63, 0.25);
 }
 
-/* GITHUB ACTION LINK */
+.card-action button:active {
+    transform: translateY(-1px);
+}
+
 .card-action a {
     color: var(--gold);
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
 }
 
 .card-action a:hover {
@@ -170,45 +197,13 @@ body {
     text-decoration: underline;
 }
 
-
-
+/* ==========================================
+   5. RESPONSIVE LAYER
+   ========================================== */
 @media (max-width: 768px) {
-    body {
-        padding: 20px; /* Reduce screen margin to match small phones */
-    }
-
-    /* Reshaping the Navbar Layout */
-    .header {
-        flex-direction: column; /* Stack logo, links, and login button vertically */
-        gap: 20px;
-        margin-bottom: 40px;
-    }
-
-    .nav-links {
-        gap: 20px;
-        flex-wrap: wrap; /* Allows navigation links to wrap line gracefully if phone screen is super thin */
-        justify-content: center;
-    }
-
-    /* Reshaping the Project Card Layout */
-    .card-container {
-        flex-direction: column;   /* CRITICAL: Switches from side-by-side to top-to-bottom stack */
-        text-align: center;       /* Centers all your bio paragraph texts */
-        padding: 40px 24px;       /* Slimmer padding to conserve narrow screen width */
-        gap: 25px;
-    }
-
-    .card-img {
-        width: 120px;             /* Scales your image down a bit so it doesn't crowd small displays */
-        height: 120px;
-    }
-
-    .card-info p {
-        font-size: 1.05rem;       /* Reduces typography scale slightly for mobile reading comfort */
-    }
-
-    .card-action {
-        width: 100%;              /* Stretches the actions across mobile layout boundary */
-        max-width: 250px;         /* Limits the button width so it doesn't look absurdly wide */
-    }
+    body { padding: 15px; }
+    .header { flex-direction: column; gap: 20px; text-align: center; }
+    .nav-links { gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .card-container { flex-direction: column; text-align: center; padding: 40px 24px; gap: 30px; }
+    .card-action { width: 100%; max-width: 250px; }
 }
