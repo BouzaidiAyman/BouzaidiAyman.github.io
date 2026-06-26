@@ -2,32 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Business Card</title>
+    <title>The Code Bazaar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
 
-    <!-- Typo Corrected: Buisnees -> Business -->
-    <h1>Business Card</h1>
-    
-    <div class="card-container"> 
-        <img src="123.png" alt="logo">
-
-        <div class="card-info">
-            <!-- Typos Corrected: evryone -> everyone | Visite -> Visit -->
-            <p class="paragraph">
-                Hello everyone, I am Ayman Bouzaidi.<br>
-                I am a web dev, I am here for you for any type of website u need.<br>
-                Just don't hesitate and contact me.
-            </p>
-        </div>
-
-        <div class="card-action">
-            <button>Just 50$</button>
-            <a href="https://github.com/BouzaidiAyman" target="_blank">Visit my GitHub</a>
-        </div>
+<nav class="nav" id="nav">
+    <div class="header">
+        <!-- Added 'nav-logo' class here -->
+        <img src="123.png" alt="logo" class="nav-logo">
+        <ul class="nav-links">
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="Login">Login</button>  
     </div>
+</nav>
+
+<div class="card-container"> 
+    <!-- Kept this as the main project card image -->
+    <img src="123.png" alt="project logo" class="card-img">
+
+    <div class="card-info">
+        <p class="paragraph">
+            Hello everyone, I am Ayman Bouzaidi.<br>
+            I am a web dev, I am here for you for any type of website u need.<br>
+            Just don't hesitate and contact me.
+        </p>
+    </div>
+
+    <div class="card-action">
+        <button>Just 50$</button>
+        <a href="https://github.com/BouzaidiAyman" target="_blank">Visit my GitHub</a>
+    </div>
+</div>
 
 </body>
 </html>
