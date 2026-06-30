@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Club - University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" data-page="home">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Cultural Club</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="library">Library</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+                <li><a href="#" data-page="login" class="nav-login">Login</a></li>
+                <li><a href="#" data-page="register" class="nav-register">Register</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- Main Content Container -->
+    <div id="app">
+        <!-- Pages will be dynamically loaded here -->
+    </div>
+ 
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
+ 
