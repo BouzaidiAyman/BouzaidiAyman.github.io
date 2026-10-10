@@ -35,10 +35,19 @@ export function AboutPage() {
             The Cultural Club
           </h2>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8, marginBottom: '1rem' }}>
-            The Cultural Club is a university community built around a simple idea: the best books, movies, and
-            series are worth discovering together. We bring together students who love reading, watching, and
-            talking about stories — whether that's a century-old novel, a cult classic film, or the series
-            everyone's been binge-watching this semester.
+           Sous le slogan:                                le Club Culturel de l'ENSAM de Meknès est un véritable creuset d'échanges et de découvertes. Il propose une multitude d'activités qui visent à enrichir la vie étudiante, à promouvoir la diversité culturelle et à favoriser le développement personnel des élèves ingénieurs
+Parmi les événements phares, on retrouve :
+
+Les ENSAM Talk-X : Une compétition d'éloquence où les étudiants présentent des sujets variés en plusieurs langues.
+
+La journée culturelle : Un moment dédié à la célébration de la diversité culturelle à travers des expositions, des performances artistiques et des dégustations culinaires.
+
+La compétition de récitation du Coran : Un événement spirituel mettant en valeur la maîtrise de la récitation coranique.
+
+Les conférences : Des rencontres avec des experts sur des sujets variés, comme l'économie islamique.
+
+Le club culturel de l’ENSAM de Meknès favorise l’épanouissement, la créativité et l’ouverture d’esprit des étudiants, tout en renforçant les liens et l’esprit de communauté.
+
           </p>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8 }}>
             Beyond the site, the club runs regular meetups, discussions, and cultural events on campus where
