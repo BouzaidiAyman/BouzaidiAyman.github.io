@@ -24,62 +24,41 @@ export function AboutPage() {
           backgroundClip: 'text',
           position: 'relative',
         }}>About Us</h1>
-        <p style={{ fontSize: '1.3rem', color: 'rgba(255,255,255,0.9)', position: 'relative' }}>
-          Who we are, and why we built this
-        </p>
+     
       </div>
 
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 2rem 5rem', color: 'rgba(255,255,255,0.85)' }}>
         <section style={{ marginBottom: '3rem' }}>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.8rem', color: '#c9a35a', marginBottom: '1rem' }}>
-            The Cultural Club
+            CLUB CULTUREL :
           </h2>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8, marginBottom: '1rem' }}>
-           Sous le slogan:                                le Club Culturel de l'ENSAM de Meknès est un véritable creuset d'échanges et de découvertes. Il propose une multitude d'activités qui visent à enrichir la vie étudiante, à promouvoir la diversité culturelle et à favoriser le développement personnel des élèves ingénieurs
-Parmi les événements phares, on retrouve :
-
-Les ENSAM Talk-X : Une compétition d'éloquence où les étudiants présentent des sujets variés en plusieurs langues.
-
-La journée culturelle : Un moment dédié à la célébration de la diversité culturelle à travers des expositions, des performances artistiques et des dégustations culinaires.
-
-La compétition de récitation du Coran : Un événement spirituel mettant en valeur la maîtrise de la récitation coranique.
-
-Les conférences : Des rencontres avec des experts sur des sujets variés, comme l'économie islamique.
-
-Le club culturel de l’ENSAM de Meknès favorise l’épanouissement, la créativité et l’ouverture d’esprit des étudiants, tout en renforçant les liens et l’esprit de communauté.
-
-          </p>
+           Sous le slogan: "فكر مبدع وقيم أصيلة" Le Club Culturel est une communauté universitaire née d’une idée simple : les meilleurs livres, films et séries méritent d’être découverts ensemble. Nous réunissons des étudiants qui aiment lire, regarder et parler d’histoires, qu’il s’agisse d’un roman centenaire, d’un film culte ou de la série que tout le monde dévore ce semestre. </p>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8 }}>
-            Beyond the site, the club runs regular meetups, discussions, and cultural events on campus where
-            members can share recommendations, debate their favorite endings, and meet people who love the same
-            stories they do.
+           Au-delà du site, le club organise régulièrement des rencontres, des discussions et des événements culturels sur le campus, où les membres peuvent partager leurs recommandations, débattre de leurs fins préférées et rencontrer des personnes qui aiment les mêmes histoires qu’eux. Parmi ses temps forts : les ENSAM Talk-X (une compétition d’éloquence en plusieurs langues), la journée culturelle (expositions, performances artistiques et dégustations culinaires), la compétition de récitation du Coran et des conférences avec des experts, comme sur l’économie islamique. Le club s’appuie sur deux cellules : la Cellule Projet, qui organise des événements entre clubs autour de questions culturelles et crée les projets du club, comme ce site, et la Cellule Formation, qui forme les étudiants sur les cours et accompagne les étudiants étrangers avec des formations en darija pour mieux les intégrer.
           </p>
         </section>
 
         <section style={{ marginBottom: '3rem' }}>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.8rem', color: '#c9a35a', marginBottom: '1rem' }}>
-            About This Project
+           À PROPOS DE CE PROJECT :
           </h2>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8, marginBottom: '1rem' }}>
-            This website is our shared library and community hub. It holds a curated collection of books, movies,
-            and series that members can browse, rate, and discuss. Every title in the library has been picked or
-            suggested by the community itself.
-          </p>
+            Ce site est notre bibliothèque partagée et le cœur de notre communauté. Il rassemble une collection choisie de livres, de films et de séries que les membres peuvent parcourir, noter et commenter. Chaque titre de la bibliothèque a été choisi ou proposé par la communauté elle-même.
+
+ </p>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8 }}>
-            Members can create an account to rate titles, leave comments, and build their own reading and watching
-            history. Inside the library, our assistant can also recommend something from the collection, or pass
-            along a bug report, a missing-title request, or a suggestion straight to the team.
+           
+La bibliothèque du club existe aussi en vrai : les étudiants peuvent y prendre des livres et les lire à leur rythme. Ensuite, nous nous retrouvons pour en discuter lors de tables rondes, où chacun partage son avis, ses coups de cœur et ses désaccords sur ce qu’il a lu. Côté formation, la Cellule Formation propose aux étudiants des formations sur les cours et d’autres sujets utiles à leur parcours. Elle accompagne aussi les étudiants étrangers, avec des formations en darija, pour qu’ils s’intègrent plus facilement.
           </p>
         </section>
 
         <section>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.8rem', color: '#c9a35a', marginBottom: '1rem' }}>
-            Get Involved
+           REJOIGNEZ-NOUS :
           </h2>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8 }}>
-            Whether you're a casual reader or a die-hard cinephile, there's a place for you here. Create an
-            account, explore the library, and let us know what we're missing — we're always looking to grow the
-            collection with the community's help.
+           Que vous soyez un lecteur occasionnel ou un cinéphile passionné, il y a une place pour vous ici. Créez un compte, explorez la bibliothèque et dites-nous ce qui manque — nous cherchons toujours à agrandir la collection avec l'aide de la communauté.
           </p>
         </section>
       </div>
