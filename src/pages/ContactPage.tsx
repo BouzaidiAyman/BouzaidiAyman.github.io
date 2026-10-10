@@ -18,8 +18,6 @@ export function ContactPage({ showToast }: ContactPageProps) {
   }
 
   const contactInfo = [
-    
-   
     { type: 'image', icon: new URL('./icon/instagram.png', import.meta.url).href, title: 'Instagram', text: 'Our Instagram Page', link: 'https://www.instagram.com/culturel_ensam/' },
     { type: 'image', icon: new URL('./icon/facebook.png', import.meta.url).href, title: 'Facebook', text: 'Our Facebook Page', link: 'https://www.facebook.com/groups/culturelENSAM/' },
     { type: 'image', icon: new URL('./icon/linkedin.png', import.meta.url).href, title: 'LinkedIn', text: 'Our Linkedin Profile', link: 'https://www.linkedin.com/in/club-culturel-a6390628a/' },
